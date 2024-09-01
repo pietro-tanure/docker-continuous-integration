@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "28-ci-docker"
+version = "0.1.0"
+description = ""
+authors = ["Pietro Tanure <pietro.tanure-onnis@ensta-paris.fr>"]
+readme = "README.md"
+packages = [{ include = "28_ci_docker" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+redis = "^5.0.8"
+flask = "^3.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+requests = "^2.32.3"
+bandit = "^1.7.9"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+pylint = "^3.2.7"
+pytest-timeout = "^2.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

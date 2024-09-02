@@ -22,5 +22,5 @@ COPY --chown=realpython test/ test/
 
 RUN python -m pip install -r requirements.txt
 
-CMD ["flask", "--app", "page_tracker.app", "run", \
+CMD ["flask", "--app", "src.page_tracker.app", "run", \
     "--host", "0.0.0.0", "--port", "5000"]

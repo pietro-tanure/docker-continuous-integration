@@ -10,6 +10,7 @@ packages = [{ include = "28_ci_docker" }]
 python = "^3.9"
 redis = "^5.0.8"
 flask = "^3.0.3"
+gunicorn = "^23.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"
@@ -20,6 +21,7 @@ flake8 = "^7.1.1"
 isort = "^5.13.2"
 pylint = "^3.2.7"
 pytest-timeout = "^2.3.1"
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]

@@ -28,7 +28,5 @@ RUN python -m pip install -r requirements-dev.txt && \
     python -m bandit -r src/ --quiet && \
     python -m flake8 src/
 
-
-
 CMD ["flask", "--app", "src.page_tracker.app", "run", \
     "--host", "0.0.0.0", "--port", "5000"]
